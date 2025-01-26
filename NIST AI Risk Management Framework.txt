@@ -1,0 +1,344 @@
+# NIST AI Risk Management Framework
+
+NIST AI Risk Management Framework.png
+
+## Resumo Executivo
+
+As tecnologias de Inteligência Artificial (IA) têm um grande potencial para transformar a sociedade e a vida das pessoas em diversas áreas, como comércio, saúde, transporte, cibersegurança e meio ambiente. Elas podem impulsionar o crescimento econômico inclusivo e apoiar avanços científicos. No entanto, a IA também apresenta riscos que podem afetar indivíduos, organizações e a sociedade como um todo. Esses riscos podem variar em termos de duração, probabilidade e impacto.
+
+O **AI Risk Management Framework (AI RMF)** define sistemas de IA como ==sistemas baseados em máquinas projetados para gerar saídas, como previsões e recomendações, com diferentes níveis de autonomia==. Embora existam padrões e práticas para mitigar riscos de sistemas de software tradicionais, os sistemas de IA apresentam desafios únicos devido à **natureza dinâmica dos dados**, **complexidade dos contextos de implementação** e sua **interação com fatores sociais**.
+
+Gerenciar os riscos da IA é essencial para garantir o desenvolvimento e uso responsável dessa tecnologia. Práticas responsáveis devem alinhar o design, desenvolvimento e uso da IA com valores éticos e objetivos sociais. Conceitos centrais incluem **centralidade humana**, **responsabilidade social** e **sustentabilidade**, buscando garantir que os sistemas de IA sejam **justos e responsáveis**. O gerenciamento eficaz de riscos pode aumentar a confiança pública na tecnologia.
+
+O **AI RMF**, desenvolvido pelo NIST (National Institute of Standards and Technology), fornece diretrizes voluntárias para organizações que desenvolvem ou utilizam IA, promovendo práticas confiáveis e responsáveis. O framework é projetado para ser flexível, aplicável a organizações de todos os setores e adaptável à evolução da tecnologia.
+
+## Parte 1: Informações Fundamentais
+
+A gestão de riscos em IA oferece um caminho para minimizar os potenciais impactos negativos dos sistemas de IA, como ameaças às liberdades e direitos civis (por exemplo, ==violação de privacidade, discriminação e viés, falta de transparência e explicabilidade==), ao mesmo tempo em que proporciona oportunidades para maximizar os impactos positivos.
+
+No contexto do AI RMF, **risco refere-se à medida composta da probabilidade de ocorrência de um evento e à magnitude ou grau das consequências do evento correspondente**. Os impactos, ou consequências, dos sistemas de IA podem ser positivos, negativos ou ambos, resultando em oportunidades ou ameaças (Adaptado de: ISO 31000:2018).
+
+> “A gestão de riscos refere-se às atividades coordenadas para direcionar e controlar uma organização em relação ao risco” (Fonte: ISO 31000:2018).
+
+Exemplos de danos potenciais que podem ser causados por sistemas de IA:
+
+Danos às Pessoas
+- Indivíduos: Prejuízos às liberdades civis, direitos, segurança física ou psicológica, ou oportunidades econômicas.
+- Grupos/Comunidades: Danos a grupos, como discriminação contra subgrupos populacionais.
+- Sociedade: Impactos negativos na participação democrática ou no acesso à educação.
+
+Danos a uma Organização
+- Prejuízos às operações empresariais.
+- Violação de segurança ou perdas financeiras.
+- Danos à reputação da organização.
+
+Danos a um Ecossistema
+- Danos a elementos e recursos interconectados e interdependentes.
+- Prejuízos ao sistema financeiro global, à cadeia de suprimentos ou a sistemas inter-relacionados.
+- Danos aos recursos naturais, ao meio ambiente e ao planeta.
+
+A gestão de riscos em IA enfrenta vários desafios que devem ser considerados para garantir a confiabilidade dos sistemas de IA.
+
+**Medição de Riscos:** Os riscos da IA, quando mal definidos ou pouco compreendidos, são difíceis de medir. Os principais desafios incluem:
+- Dependência de terceiros: Dados, softwares e hardwares de terceiros podem acelerar o desenvolvimento, mas complicam a medição de riscos, pois diferentes organizações podem usar métricas e metodologias distintas.
+- Riscos emergentes: A identificação e rastreamento contínuo desses riscos são essenciais para avaliação de impactos potenciais.
+- Métricas confiáveis: A ausência de consenso sobre métodos robustos e verificáveis de medição dificulta a avaliação precisa dos riscos.
+- Estágios do ciclo de vida: Os riscos podem se manifestar de forma diferente ao longo do desenvolvimento e uso dos sistemas de IA.
+- Contexto real: Riscos medidos em ambientes de laboratório podem diferir daqueles observados no mundo real.
+- Opacidade (Inescrutabilidade): A falta de transparência e interpretabilidade dos sistemas de IA dificulta a avaliação dos riscos.
+- Comparação com humanos: A definição de métricas de referência para sistemas que substituem ou complementam atividades humanas é complexa.
+
+**Tolerância ao Risco:** A estrutura do AI RMF não define níveis de tolerância ao risco, mas sugere que essa definição deve considerar:
+- Contextualização: A tolerância ao risco varia conforme o caso de uso, regulamentos legais e políticas organizacionais.
+- Evolução constante: Os níveis de aceitação de risco mudam com o tempo à medida que novas normas e regulamentações surgem.
+- Influência de partes interessadas: A sociedade, governos e a indústria contribuem para estabelecer os limites do que é aceitável.
+- Flexibilidade organizacional: Organizações devem alinhar suas práticas com regulamentações aplicáveis e diretrizes do setor.
+
+**Priorização de Riscos:** Eliminar totalmente os riscos não é prático. Assim, a priorização eficaz requer:
+- Alocação de recursos: Focar nas áreas de maior impacto para otimizar esforços.
+- Critérios de urgência: Riscos inaceitáveis, como impactos severos iminentes, exigem ação imediata.
+- Contexto de uso: Sistemas de IA que interagem diretamente com humanos ou lidam com dados sensíveis requerem maior prioridade.
+- Risco residual: A documentação do risco remanescente após medidas de mitigação é essencial para informar os usuários.
+
+**Integração e Gestão Organizacional de Riscos:** Os riscos da IA não devem ser considerados isoladamente, devendo ser incorporados às estratégias mais amplas de gestão de riscos corporativos. Aspectos importantes incluem:
+- Interação com outros riscos: A IA deve ser gerenciada em conjunto com preocupações como privacidade, segurança cibernética e impacto ambiental.
+- Responsabilidades claras: Diferentes atores no ciclo de vida da IA (desenvolvedores, implementadores e usuários) devem compartilhar responsabilidades.
+- Comprometimento organizacional: A gestão eficaz de riscos requer apoio de liderança sênior e mudanças culturais dentro das organizações.
+- Diferenças entre organizações: Pequenas e médias empresas podem enfrentar desafios distintos em relação a grandes corporações devido a recursos limitados.
+
+## 2. Público Alvo
+
+Segundo a estrutura da OECD (2022), o ciclo de vida da IA é classificado em cinco dimensões sociotécnicas, adaptadas pelo NIST para enfatizar a importância dos processos de Teste, Avaliação, Verificação e Validação (TEVV) ao longo do ciclo de vida da IA. As principais dimensões são:
+- Contexto da Aplicação: Planejamento e projeto do sistema de IA.
+- Dados e Entradas: Coleta e processamento de dados.
+- Modelo de IA: Construção e validação de modelos de IA.
+- Tarefas e Saída: Implantação e monitoramento do sistema de IA.
+- Pessoas e Planeta: Dimensão central que abrange direitos humanos e o bem-estar social e ambiental.
+
+Os atores da dimensão "Pessoas e Planeta" incluem associações comerciais, organizações de pesquisa, grupos de defesa, ONGs ambientais e usuários finais, que ajudam a contextualizar e compreender os impactos da IA.
+
+**Dimensões e Estágios do Ciclo de Vida da IA**
+
+dimensoes e estagios ia.png
+
+**Contexto da Aplicação**
+- Estágio do Ciclo de Vida: Planejar e Projetar
+- TEVV: Inclui auditoria e avaliação de impacto.  
+- Atividades: Definir e documentar o conceito e os objetivos do sistema, pressupostos subjacentes e contexto, considerando requisitos legais, regulatórios e éticos.  
+- Atores Representativos: Operadores de sistema, usuários finais, especialistas de domínio, designers de IA, avaliadores de impacto, especialistas em TEVV, gestores de produto, auditores, especialistas em conformidade, comunidades impactadas.
+
+**Dados e Entrada**
+- Estágio do Ciclo de Vida: Coletar e Processar Dados
+- TEVV: Inclui validação interna e externa.  
+- Atividades: Coletar, validar e limpar dados; documentar metadados e características do conjunto de dados, considerando objetivos, requisitos legais e éticos.  
+- Atores Representativos: Cientistas de dados, engenheiros de dados, fornecedores de dados, especialistas de domínio, analistas socioculturais, especialistas em fatores humanos, especialistas em TEVV.
+
+**Modelo de IA**
+- Estágio do Ciclo de Vida: Construir e Utilizar Modelo
+- TEVV: Inclui testes de modelo.  
+- Atividades: Criar ou selecionar algoritmos e treinar modelos.  
+- Atores Representativos: Modeladores, engenheiros de modelo, cientistas de dados, desenvolvedores, especialistas de domínio, com consulta de analistas socioculturais e especialistas em TEVV.
+
+**Modelo de IA**
+- Estágio do Ciclo de Vida: Verificar e Validar
+- TEVV: Inclui testes de modelo.  
+- Atividades: Verificar, validar, calibrar e interpretar a saída do modelo.  
+- Atores Representativos: Modeladores, engenheiros de modelo, cientistas de dados, desenvolvedores, especialistas de domínio, com consulta de analistas socioculturais e especialistas em TEVV.
+
+**Tarefas e Saída**
+- Estágio do Ciclo de Vida: Implantar e Usar 
+- TEVV: Inclui integração, testes de conformidade e validação.  
+- Atividades: Implantação piloto, compatibilidade com sistemas legados, verificação da conformidade regulatória, gerenciamento de mudanças organizacionais e avaliação da experiência do usuário.  
+- Atores Representativos: Integradores de sistemas, desenvolvedores, engenheiros de software, especialistas de domínio, especialistas em aquisição, fornecedores terceirizados, executivos de alto nível, com consulta de especialistas em fatores humanos, analistas socioculturais e especialistas em TEVV.
+
+**Contexto da Aplicação**
+- Estágio do Ciclo de Vida: Operar e Monitorar
+- TEVV: Inclui auditoria e avaliação de impacto.  
+- Atividades: Operar o sistema de IA e monitorar continuamente suas recomendações e impactos (previstos e imprevistos), considerando objetivos, requisitos legais e éticos.  
+- Atores Representativos: Operadores de sistema, usuários finais, especialistas de domínio, designers de IA, avaliadores de impacto, especialistas em TEVV, gestores de produto, auditores, especialistas em conformidade, comunidades impactadas.
+
+**Pessoas e Planeta**
+- Estágio do Ciclo de Vida: Usuário ou Impactado
+- TEVV: Inclui auditoria e avaliação de impacto.  
+- Atividades: Utilizar o sistema de IA, monitorar e avaliar os impactos, buscar mitigação dos riscos e defender direitos.  
+- Atores Representativos: Usuários finais, operadores, comunidades impactadas, público em geral, formuladores de políticas públicas, organizações de padrões, associações comerciais, grupos de defesa, organizações ambientais, organizações da sociedade civil, pesquisadores.
+
+## 3. Riscos da IA e Confiabilidade
+
+ia confiavel.png
+
+Este framework articula as seguintes características da IA confiável e oferece orientações para abordá-las. As características dos sistemas de IA confiáveis incluem: 
+- **Validade e Confiabilidade**: A validade e a confiabilidade são essenciais para garantir a confiabilidade dos sistemas de IA. A ==validade refere-se à confirmação de que um sistema atende aos requisitos para seu uso pretendido==, enquanto a confiabilidade é a capacidade do sistema de operar corretamente sem falhas em determinadas condições e por um período de tempo especificado. A precisão e a robustez são fatores críticos que contribuem para a validade, mas podem entrar em conflito entre si. A precisão avalia o quão próximos os resultados estão dos valores reais, exigindo métodos de teste bem definidos e representativos. A robustez, por sua vez, refere-se à capacidade do sistema de manter seu desempenho sob diferentes circunstâncias, incluindo situações inesperadas.
+- **Responsabilidade e Transparência**: A confiabilidade da IA depende da responsabilidade e da transparência. A ==transparência refere-se ao grau em que informações sobre um sistema de IA e seus resultados estão disponíveis para os usuários, promovendo maior compreensão e confiança==. A transparência significativa deve fornecer informações adequadas a cada fase do ciclo de vida da IA e ao nível de conhecimento dos envolvidos. Ela abrange desde as decisões de design e dados de treinamento até a estrutura do modelo e seu uso. A transparência é fundamental para corrigir impactos negativos e para a interação humano-IA, como notificações de resultados adversos. No entanto, um sistema transparente não garante precisão, segurança ou equidade, mas a falta de transparência dificulta a avaliação dessas características. A responsabilidade deve considerar o papel dos envolvidos e os diferentes contextos legais, culturais e setoriais. Em casos de alto risco, como impactos sobre vida e liberdade, a transparência e a responsabilidade devem ser aprimoradas de forma proporcional. Práticas organizacionais, como a gestão de riscos, ajudam a criar sistemas mais responsáveis. A rastreabilidade dos dados de treinamento e a atribuição de decisões contribuem para a transparência e a conformidade com direitos de propriedade intelectual. Desenvolvedores e implementadores devem testar ferramentas de transparência para garantir o uso adequado dos sistemas de IA.
+- **Proteção**: A proteção dos sistemas de IA ==deve garantir que, sob condições definidas, não representem riscos à vida humana, à saúde, à propriedade ou ao meio ambiente==. A operação segura da IA pode ser aprimorada por meio de práticas responsáveis de design, desenvolvimento e implantação, fornecimento de informações claras aos usuários, tomada de decisão responsável e documentação baseada em evidências de incidentes. Diferentes riscos de segurança exigem abordagens de gestão adaptadas ao seu contexto e gravidade, sendo que riscos com potencial de causar ferimentos graves ou morte devem receber prioridade máxima. A incorporação de considerações de segurança desde as fases iniciais do ciclo de vida do sistema pode prevenir falhas perigosas.
+- **Segurança e Resiliência**: A segurança e a resiliência dos sistemas de IA são essenciais para garantir sua capacidade de resistir a eventos adversos inesperados e mudanças em seu ambiente ou uso, mantendo suas funções e estrutura, e degradando-se de forma segura quando necessário. A ==resiliência refere-se à capacidade de recuperação após um evento adverso, enquanto a segurança inclui resiliência, mas também abrange medidas preventivas, de proteção e de resposta a ataques, como exemplos adversariais, envenenamento de dados e exfiltração de modelos ou dados sensíveis==. Sistemas de IA seguros garantem a confidencialidade, integridade e disponibilidade por meio de mecanismos de proteção contra acessos e usos não autorizados. A segurança e a resiliência devem ser gerenciadas com base em frameworks reconhecidos, como o NIST Cybersecurity Framework, para mitigar riscos e fortalecer a robustez dos sistemas diante de usos inesperados ou mal-intencionados.
+- **Explicabilidade e Interpretabilidade**: A explicabilidade e a interpretabilidade são essenciais para entender o funcionamento e os resultados dos sistemas de IA. A ==explicabilidade refere-se à representação dos mecanismos internos do sistema, enquanto a interpretabilidade trata do significado das saídas do sistema no contexto de seus objetivos funcionais==. Ambas ajudam operadores, supervisores e usuários a compreender melhor a funcionalidade e a confiabilidade da IA, reduzindo percepções de risco associadas à falta de compreensão dos resultados. Sistemas explicáveis permitem uma depuração, monitoramento e auditoria mais eficazes, com documentação detalhada e governança aprimorada. A interpretabilidade pode ser aprimorada comunicando as razões por trás das previsões ou recomendações da IA. Embora distintas, transparência, explicabilidade e interpretabilidade se complementam: a transparência explica “o que aconteceu”, a explicabilidade detalha “como” uma decisão foi tomada e a interpretabilidade responde “por que” a decisão foi tomada e seu significado para o usuário.
+- **Aprimoramento da Privacidade**: A privacidade em sistemas de IA está relacionada às práticas e normas que protegem a autonomia, identidade e dignidade humana, abordando aspectos como liberdade contra intrusão, limitação de observação e controle sobre informações pessoais. ==Valores como anonimato, confidencialidade e controle devem orientar o design, desenvolvimento e implementação da IA==. Os riscos de privacidade podem impactar outras características, como segurança, viés e transparência, exigindo equilíbrio entre esses fatores. Além disso, os sistemas de IA podem introduzir novos riscos, permitindo inferências que revelem informações pessoais antes privadas. Tecnologias de aprimoramento da privacidade (PETs), como técnicas de minimização de dados, anonimização e agregação, podem ajudar a proteger a privacidade, embora possam comprometer a precisão do sistema em alguns contextos. Assim, a privacidade deve ser considerada de forma integrada ao longo de todo o ciclo de vida do sistema de IA para garantir um equilíbrio adequado entre proteção e funcionalidade.
+- **Equidade com o Gerenciamento de Vieses Prejudiciais**: A justiça em sistemas de IA envolve a promoção da igualdade e equidade, abordando questões como viés prejudicial e discriminação. ==Definir padrões de justiça é desafiador, pois percepções de equidade variam entre culturas e contextos de aplicação. A gestão eficaz de riscos exige reconhecer essas diferenças.== A mitigação de vieses prejudiciais não garante, por si só, um sistema justo, pois fatores como acessibilidade e desigualdades sistêmicas podem persistir. O viés em IA vai além do equilíbrio demográfico e da representatividade dos dados, sendo categorizado em três tipos principais: viés sistêmico, presente nos dados e práticas organizacionais; viés computacional e estatístico, decorrente de amostras não representativas e erros sistemáticos; e viés cognitivo humano, relacionado à interpretação e tomada de decisão pelos usuários. Esses vieses podem surgir sem intenção discriminatória e, se não forem gerenciados, os sistemas de IA podem amplificar desigualdades preexistentes, influenciando negativamente indivíduos e comunidades. A justiça em IA está intrinsecamente ligada à transparência, sendo essencial adotar práticas de gestão que considerem impactos sociais e éticos para reduzir os riscos e promover a equidade nos sistemas automatizados.
+
+Criar uma IA confiável requer equilibrar cada uma dessas características com base no contexto de uso do sistema de IA.
+
+Abordar individualmente as características de confiabilidade da IA não garantirá a confiabilidade do sistema de IA; geralmente, estão envolvidos trade-offs, raramente todas as características se aplicam a cada contexto, e algumas serão mais ou menos importantes em determinadas situações. Em última análise, a confiabilidade é um conceito social que varia em um espectro e é tão forte quanto sua característica mais fraca.
+
+Explicação complementar sobre transparência, explicabilidade e interpretabilidade no contexto de IA confiável:
+
+**Transparência:**
+- Refere-se à abertura sobre como o sistema de IA funciona, quais dados utiliza e suas limitações.
+- Exemplo: Documentação detalhada sobre o modelo e seu processo de decisão.
+- Objetivo: Garantir visibilidade para reguladores e usuários.
+
+**Explicabilidade:**
+- Capacidade de fornecer razões compreensíveis para as decisões do modelo de IA.
+- Exemplo: Justificativa de por que um empréstimo foi aprovado ou negado.
+- Objetivo: Ajudar os usuários a entenderem os resultados de forma clara.
+
+**Interpretabilidade:**
+- Grau em que um humano pode entender o funcionamento interno do modelo sem explicações adicionais.
+- Exemplo: Modelos simples como árvores de decisão são facilmente interpretáveis, enquanto redes neurais não.
+- Objetivo: Facilitar a compreensão intuitiva das relações entre entrada e saída.
+
+## AI RMF Core
+
+ai rmf core.png
+
+O núcleo do AI RMF fornece resultados e ações que facilitam o diálogo, a compreensão e as atividades para gerenciar os riscos da IA e desenvolver sistemas de IA confiáveis de forma responsável. O núcleo é composto por quatro funções principais: **GOVERNAR (GOVERN), MAPEAR (MAP), MEDIR (MEASURE)** e **GERENCIAR (MANAGE)**. Cada uma dessas funções de alto nível é subdividida em categorias e subcategorias, que, por sua vez, são detalhadas em ações e resultados específicos.
+
+### Governar
+
+A função **GOVERNAR (GOVERN)** tem como ==objetivo implementar uma cultura organizacional voltada para a gestão de riscos em todas as etapas do ciclo de vida dos sistemas de IA==, abrangendo desde o design até a implantação e monitoramento. Ela estabelece processos, documentos e estruturas organizacionais para antecipar, identificar e gerenciar riscos, alinhando-os aos princípios, políticas e prioridades estratégicas da organização. Além disso, ==conecta os aspectos técnicos do desenvolvimento de IA aos valores organizacionais, capacitando as equipes envolvidas==. A governança deve ser contínua e integrada às demais funções de gestão de riscos, garantindo conformidade e adaptação às mudanças ao longo do tempo. Uma governança eficaz impulsiona práticas internas, facilita a cultura organizacional de riscos e melhora a transparência, a revisão humana e a responsabilização. A ==liderança sênior desempenha um papel fundamental na definição do tom para a gestão de riscos, enquanto a documentação fortalece os processos de controle==. A adoção dessa função promove uma cultura organizacional orientada para a compreensão e gestão eficaz dos riscos da IA.
+
+A função **GOVERNAR (GOVERN)** do AI RMF é estruturada em seis categorias principais, cada uma com subcategorias que detalham ações e resultados esperados para uma gestão eficaz dos riscos da IA:
+
+**Políticas, processos e práticas organizacionais:**
+- Implementação de requisitos legais e regulatórios relacionados à IA.  
+- Integração das características de IA confiável nas políticas da organização.  
+- Estabelecimento de processos de gestão de riscos alinhados à tolerância organizacional.  
+- Monitoramento contínuo e revisão periódica dos processos de gestão de riscos.  
+- Inventário de sistemas de IA conforme as prioridades de risco organizacional.  
+- Procedimentos para desativação segura de sistemas de IA.  
+
+**Estruturas de responsabilização:**
+- Definição clara de papéis, responsabilidades e canais de comunicação.  
+- Treinamento de equipes internas e parceiros sobre gestão de riscos de IA.  
+- Compromisso da liderança executiva na tomada de decisões sobre riscos.  
+
+**Diversidade, equidade, inclusão e acessibilidade:**
+- Decisões sobre riscos de IA baseadas em equipes diversificadas.  
+- Políticas para supervisão e diferenciação de responsabilidades entre humanos e IA.  
+
+**Cultura organizacional orientada para riscos:**
+- Promoção de uma mentalidade crítica e voltada para a segurança.  
+- Documentação e comunicação dos riscos e impactos da IA.  
+- Práticas para testes, identificação de incidentes e compartilhamento de informações.  
+
+**Engajamento com atores relevantes da IA:**
+- Coleta e integração de feedback externo sobre impactos sociais e individuais da IA.  
+- Processos para incorporar feedback contínuo nos sistemas de IA.  
+
+**Gerenciamento de riscos em fornecedores e terceiros:**
+- Políticas para mitigar riscos associados a softwares e dados de terceiros.  
+- Planos de contingência para falhas ou incidentes em sistemas terceirizados de alto risco.  
+
+### Mapear
+
+A função **MAPEAR (MAP)** tem como ==objetivo estabelecer o contexto necessário para identificar e gerenciar os riscos relacionados a um sistema de IA==. Devido à interdependência das atividades ao longo do ciclo de vida da IA e à diversidade de atores envolvidos, a gestão de riscos pode ser complexa, pois decisões iniciais podem impactar o comportamento do sistema e suas consequências em fases posteriores. A função MAP busca reduzir a incerteza ao antecipar e abordar possíveis fontes de risco negativo, fornecendo informações essenciais para a tomada de decisões e para os processos de medição e gestão. ==A implementação eficaz desta função envolve a consideração de múltiplas perspectivas, incluindo equipes internas diversas e partes interessadas externas, como usuários finais e comunidades impactadas==. Essa abordagem permite compreender melhor os contextos de uso, verificar suposições, identificar usos positivos e limitações dos sistemas de IA, bem como antecipar riscos associados ao uso pretendido e não pretendido. Após a execução da função MAP, as organizações devem ter conhecimento suficiente para decidir sobre o desenvolvimento ou implantação de um sistema de IA, utilizando as funções de MEDIR e GERENCIAR, além das políticas definidas na função GOVERNAR para apoiar a gestão contínua de riscos.
+
+A função **MAPEAR (MAP)** no AI RMF envolve a compreensão e categorização do sistema de IA, permitindo uma visão clara de seus objetivos, riscos e impactos. Ela está estruturada em cinco categorias principais:
+
+**Estabelecimento e compreensão do contexto:**  
+- Definição dos propósitos, usos potenciais e expectativas em relação ao sistema de IA, considerando impacto em indivíduos, sociedade e meio ambiente.  
+- Inclusão de uma equipe interdisciplinar diversa para garantir uma compreensão ampla do contexto.  
+- Alinhamento do sistema com a missão e objetivos organizacionais.  
+- Definição do valor de negócio e da tolerância ao risco organizacional.  
+- Consideração de requisitos técnicos e sociais no design do sistema.  
+
+**Categorização do sistema de IA:**  
+- Identificação das tarefas específicas e métodos do sistema, como classificadores ou modelos generativos.  
+- Documentação das limitações do sistema e supervisão humana necessária.  
+- Consideração da integridade científica e aspectos relacionados à confiabilidade e validade do sistema.  
+
+**Compreensão das capacidades, metas e custos do sistema:**  
+- Avaliação dos benefícios e desempenho esperado do sistema.  
+- Identificação de custos potenciais, incluindo impactos não financeiros.  
+- Definição do escopo de aplicação conforme as capacidades do sistema.  
+- Documentação de processos para a capacitação de operadores e supervisores humanos.  
+
+**Mapeamento de riscos e benefícios dos componentes do sistema:**  
+- Identificação de riscos legais e técnicos associados a componentes de terceiros, como software e dados.  
+- Estabelecimento de controles internos para minimizar riscos desses componentes.  
+
+**Caracterização dos impactos do sistema:**  
+- Avaliação da probabilidade e magnitude de impactos positivos e negativos com base em casos anteriores e feedback de partes interessadas.  
+- Definição de práticas para envolvimento contínuo com os atores relevantes e integração do feedback na melhoria do sistema.  
+
+### Medir
+
+A função **MEDIR (MEASURE)** ==utiliza ferramentas e metodologias quantitativas, qualitativas ou híbridas para analisar, avaliar, comparar e monitorar os riscos da IA e seus impactos==. Baseando-se nas informações obtidas na função MAPEAR, ==a função MEASURE fornece subsídios para a função GERENCIAR==. Os sistemas de IA devem ser testados antes da implantação e regularmente durante sua operação, documentando aspectos de funcionalidade e confiabilidade. ==A medição dos riscos da IA inclui métricas de confiabilidade, impacto social e interações humano-IA, utilizando testes rigorosos, avaliações de desempenho e relatórios formais==. Revisões independentes são recomendadas para mitigar vieses internos e conflitos de interesse. A medição permite rastrear as características de confiança da IA e embasar decisões de gerenciamento, como ajustes, mitigação de impactos ou descontinuação do sistema. Ao concluir essa função, as organizações terão implementado processos padronizados de teste, avaliação, verificação e validação (TEVV), garantindo que as métricas sejam conduzidas de forma transparente e alinhadas às normas científicas, legais e éticas. A aplicação contínua da função MEASURE permite uma avaliação abrangente da confiabilidade do sistema, identificação de riscos emergentes e verificação da eficácia das métricas, contribuindo para os esforços de monitoramento e resposta na função GERENCIAR.
+
+A função **MEDIR (MEASURE)** no AI RMF foca na identificação, avaliação e monitoramento contínuo dos riscos da IA por meio de métricas e métodos apropriados. Ela é dividida em quatro categorias principais:
+
+**Identificação e aplicação de métodos e métricas adequadas:**  
+- Seleção de métricas para medir os principais riscos da IA identificados na fase de mapeamento.  
+- Avaliação contínua da adequação das métricas e eficácia dos controles existentes, incluindo relatórios de erros e impactos.  
+- Envolvimento de especialistas internos e externos para revisões regulares.  
+
+**Avaliação das características de confiabilidade da IA:**  
+- Documentação de conjuntos de testes, métricas e ferramentas utilizadas.  
+- Garantia de conformidade com requisitos de proteção de participantes em avaliações com seres humanos.  
+- Monitoramento contínuo do desempenho e comportamento do sistema em produção.  
+- Avaliação da segurança, privacidade, equidade, explicabilidade e impacto ambiental do sistema, com a devida documentação.  
+- Demonstração da validade, confiabilidade e limitações da generalização do sistema.  
+
+**Mecanismos para rastreamento contínuo de riscos da IA:**  
+- Estabelecimento de processos para identificar e acompanhar riscos novos e emergentes.  
+- Consideração de métodos de rastreamento para contextos onde os riscos são difíceis de medir.  
+- Implementação de canais de feedback para que usuários e comunidades impactadas possam relatar problemas e questionar decisões do sistema.  
+
+**Coleta e avaliação de feedback sobre a eficácia da medição:**  
+- Conexão das abordagens de medição com o contexto de implantação, com consultas a especialistas e usuários finais.  
+- Documentação de melhorias ou declínios de desempenho com base em feedback contínuo e dados coletados em campo.  
+
+### Gerenciar
+
+A função **GERENCIAR (MANAGE)** ==envolve a alocação contínua de recursos para tratar os riscos identificados e medido, conforme definido na função GOVERNAR==. O tratamento de riscos ==inclui planos para responder, recuperar e comunicar incidentes ou eventos adversos==. As informações contextuais obtidas com especialistas e partes interessadas, estabelecidas na função GOVERNAR e aprofundadas nas funções MAPEAR e MEDIR, são utilizadas para reduzir a probabilidade de falhas do sistema e impactos negativos. A documentação sistemática fortalece os esforços de gestão de riscos, aumentando a transparência e a responsabilidade. Além disso, são implementados processos para avaliar riscos emergentes e promover melhorias contínuas. Após a conclusão da função GERENCIAR, as organizações terão planos estabelecidos para priorização de riscos, monitoramento contínuo e aprimoramento, permitindo uma gestão eficaz dos sistemas de IA implantados e a alocação eficiente de recursos. A aplicação contínua dessa função é essencial para acompanhar a evolução dos métodos, contextos, riscos e expectativas das partes interessadas.
+
+A função **GERENCIAR (MANAGE)** no AI RMF aborda a priorização, resposta e gestão contínua dos riscos da IA identificados nas etapas de mapeamento e medição. Ela é dividida em quatro categorias principais:
+
+**Priorização e gestão de riscos com base em avaliações:**  
+- Determinar se o sistema de IA atende aos seus objetivos e se deve continuar em desenvolvimento ou implantação.  
+- Priorização do tratamento dos riscos com base no impacto, probabilidade e recursos disponíveis.  
+- Desenvolvimento e documentação de respostas aos riscos de alta prioridade, como mitigação, transferência, evasão ou aceitação.  
+- Registro dos riscos residuais negativos que podem afetar usuários e stakeholders.  
+
+**Estratégias para maximizar benefícios e minimizar impactos negativos:**  
+- Consideração de recursos necessários e alternativas não baseadas em IA para minimizar impactos negativos.  
+- Implementação de mecanismos para manter o valor dos sistemas de IA implantados.  
+- Procedimentos para responder a riscos desconhecidos quando identificados.  
+- Estabelecimento de processos para desativação ou substituição de sistemas que não atendem aos padrões esperados.  
+
+**Gestão de riscos e benefícios de terceiros:**  
+- Monitoramento contínuo de riscos e benefícios de recursos de terceiros, com aplicação de controles documentados.  
+- Acompanhamento regular de modelos pré-treinados utilizados no desenvolvimento do sistema de IA.  
+
+	**Monitoramento e comunicação contínua dos riscos da IA:**  
+- Implementação de planos de monitoramento pós-implantação, incluindo coleta de feedback, resposta a incidentes e gestão de mudanças.  
+- Integração de atividades mensuráveis de melhoria contínua nos sistemas de IA, com envolvimento de partes interessadas.  
+- Comunicação transparente de erros e incidentes para todas as partes envolvidas, garantindo documentação e recuperação eficazes.  
+
+## Como os Riscos da IA Diferem dos Riscos de Software Tradicional  
+
+Assim como o software tradicional, os riscos das tecnologias baseadas em IA podem se estender além das empresas, impactando organizações e até a sociedade. No entanto, os sistemas de IA apresentam riscos únicos que não são totalmente abordados pelos frameworks de gestão de risco atuais.  
+
+Alguns fatores que diferenciam os riscos da IA incluem:  
+
+- **Qualidade e Representatividade dos Dados:** Os dados usados para treinar IA podem não refletir adequadamente o contexto de uso pretendido, podendo conter vieses prejudiciais que comprometem a confiabilidade do sistema.  
+- **Dependência de Dados:** A IA depende fortemente de dados complexos e em grande volume, o que pode introduzir desafios adicionais na gestão e atualização.  
+- **Mudanças no Treinamento:** Alterações intencionais ou não-intencionais durante o treinamento podem modificar significativamente o desempenho da IA.  
+- **Desatualização de Dados:** Os conjuntos de dados podem se tornar obsoletos ou perder o vínculo com seu contexto original.  
+- **Escala e Complexidade:** Muitos sistemas de IA possuem bilhões de pontos de decisão, tornando sua gestão e avaliação mais desafiadoras.  
+- **Modelos Pré-Treinados:** Embora possam melhorar a precisão e eficiência, também introduzem incertezas estatísticas e desafios relacionados à reprodutibilidade e vieses.  
+- **Previsão de Falhas:** A dificuldade em prever falhas em sistemas de IA complexos e de larga escala.  
+- **Privacidade:** Maior risco devido à capacidade da IA de agregar dados sensíveis em grande escala.  
+- **Manutenção Contínua:** IA exige manutenção mais frequente devido a mudanças nos dados e conceitos (drift de dados/modelos).  
+- **Falta de Transparência:** A opacidade dos sistemas de IA pode dificultar a auditoria e a documentação dos processos.  
+- **Padrões de Teste:** Os testes tradicionais não são adequados para avaliar completamente os sistemas de IA.  
+- **Custo Computacional e Impacto Ambiental:** O desenvolvimento de IA demanda altos recursos computacionais, afetando o meio ambiente.  
+- **Previsibilidade de Efeitos Colaterais:** A dificuldade de prever efeitos não intencionais vai além das métricas estatísticas tradicionais.  
+
+**Considerações de Segurança e Privacidade**  
+
+A gestão de riscos em IA deve considerar abordagens de segurança e privacidade desde o design até a implantação e uso. Frameworks como o **NIST Cybersecurity Framework**, **NIST Privacy Framework** e o **Secure Software Development Framework** podem ser utilizados para apoiar a redução dos riscos de segurança e privacidade.  
+
+**Desafios não Cobertos por Frameworks Existentes**  
+
+Atualmente, os frameworks de risco não abordam completamente desafios como:  
+
+- Mitigação de vieses prejudiciais nos sistemas de IA;  
+- Riscos associados à IA generativa;  
+- Segurança contra ataques de evasão, extração de modelos e inferência de membros;  
+- Riscos de terceiros, aprendizado por transferência e uso indevido da IA.  
+
+Tanto as tecnologias tradicionais quanto as de IA estão em rápida evolução, exigindo monitoramento contínuo e implantação responsável para garantir sistemas confiáveis e éticos no futuro.
+
+## Gestão de Riscos de IA e Interação Humano-IA  
+
+Organizações que projetam, desenvolvem ou implementam sistemas de IA podem aprimorar sua gestão de riscos ao entender as limitações atuais da interação entre humanos e IA. O **AI RMF** (Artificial Intelligence Risk Management Framework) oferece diretrizes para definir claramente os papéis e responsabilidades dos humanos no uso, interação e gestão desses sistemas.  
+
+**Principais desafios da interação Humano-IA:**  
+
+**Definição de Papéis e Responsabilidades:**  
+- As configurações de interação podem variar de totalmente autônomas a totalmente manuais.  
+- Alguns sistemas podem tomar decisões de forma independente, enquanto outros exigem supervisão humana ou podem ser usados como suporte para decisões humanas.  
+- Determinar quando a supervisão humana é necessária é crucial para a gestão de riscos.
+
+**Vieses Cognitivos e Sistêmicos:**  
+- Os vieses humanos, tanto individuais quanto organizacionais, podem ser introduzidos em todas as fases do ciclo de vida da IA (design, desenvolvimento, implantação e uso).  
+- A falta de transparência dos sistemas pode agravar esses vieses, impactando negativamente as decisões e levando a potenciais riscos.
+
+**Variações no Resultado da Interação:**  
+- Em certas tarefas, como julgamentos perceptivos, a IA pode amplificar vieses humanos, resultando em decisões ainda mais tendenciosas.  
+- No entanto, quando configurada corretamente, a colaboração humano-IA pode levar a uma complementaridade eficaz e melhorar o desempenho geral.
+
+**Complexidade na Apresentação de Informações:**  
+- Os humanos interpretam as saídas da IA de maneiras diferentes, baseadas em suas preferências, habilidades e características individuais.  
+- Uma comunicação eficaz dos resultados e explicações da IA é essencial para uma tomada de decisão informada.  
